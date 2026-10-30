@@ -1,5 +1,5 @@
 // Caché offline de Bombi Fixer (mvo3jd2j). Sirve la app desde caché y la actualiza en segundo plano.
-const CACHE = 'serie-mvo3jd2j-id2';
+const CACHE = 'serie-mvo3jd2j-id3';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './icon-maskable-192.png', './icon-maskable-512.png', './apple-touch-icon.png', './favicon-32.png'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
